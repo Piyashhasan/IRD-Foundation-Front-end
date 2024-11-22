@@ -14,16 +14,40 @@ html {
   text-rendering: optimizeLegibility;
 }
 
+body {
+  background-color: #f7f8fa;
+}
+
 a {
   text-decoration: none;
 }
 
-ul li {
-  list-style-type: none;
+ul li::marker {
+  font-size: 20px;
+  color: #1fa45b;
 }
 
-/* --- Reusable class --- */
-.wrapper {
-  max-width: 1100px;
-  margin: 0 auto;
+/* ul li {
+  list-style-type: none;
+} */
+
+/* --- scrollbar customize class --- */
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
